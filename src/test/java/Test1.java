@@ -10,7 +10,7 @@ public class Test1 {
         Robot robot = new Robot();
         Random random = new Random();
         while (true) {
-            robot.mouseMove(random.nextInt(MAX_X), random.nextInt(MAX_Y));
+            robot.mouseMove(MouseInfo.getPointerInfo().getLocation().x, MouseInfo.getPointerInfo().getLocation().y-10);
             System.out.println(MouseInfo.getPointerInfo().getLocation());
 //            robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
 //            robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
